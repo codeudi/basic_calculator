@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&family=Quantico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="box">
+        <div id="zero">
+        <input type="text" id="number" placeholder="0">
+        </div>
+        <div id="first" class="box1">
+            <button id="c" onclick="clr()">C</button>
+            <button id="decimal" onclick="operands('%')">%</button>
+            <button id="add" class="opt" onclick="operands('+')">+</button>
+        </div>
+        <div id="second" class="box1">
+            <button id="7" class="num" onclick="stradd('7')">7</button>
+            <button id="8" class="num" onclick="stradd('8')">8</button>
+            <button id="9" class="num" onclick="stradd('9')">9</button>
+            <button id="minus" class="opt" onclick="operands('-')">-</button>
+        </div>
+        <div id="third" class="box1">
+            <button id="4" class="num" onclick="stradd('4')">4</button>
+            <button id="5" class="num" onclick="stradd('5')">5</button>
+            <button id="6" class="num" onclick="stradd('6')">6</button>
+            <button id="divide" class="opt" onclick="operands('/')">/</button>
+        </div>
+        <div id="fourth" class="box1">
+            <button id="1" class="num" onclick="stradd('1')">1</button>
+            <button id="2" class="num" onclick="stradd('2')">2</button>
+            <button id="3" class="num" onclick="stradd('3')">3</button>
+            <button id="multiply" class="opt" onclick="operands('*')">*</button>
+        </div>
+        <div id="fifth" class="box1">
+            <button id="zer" onclick="stradd('0')">0</button>
+            <button id="equal" class="opt" onclick="operands('=')">=</button>
+        </div>
+    </div>
+</body>
+</html>
